@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: dubbo-consumer-example
+  main:
+    allow-bean-definition-overriding: false
+dubbo:
+  application:
+#    id: dubbo-consumer-example
+    name: dubbo-consumer-example
+    qosEnable: false
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 10001
+  registry:
+#    id: dubbo-consumer-example-registry
+    address: nacos://127.0.0.1:8848
+  config-center:
+    address: nacos://127.0.0.1:8848
+  metadata-report:
+    address: nacos://127.0.0.1:8848
+server:
+  port: 8081
